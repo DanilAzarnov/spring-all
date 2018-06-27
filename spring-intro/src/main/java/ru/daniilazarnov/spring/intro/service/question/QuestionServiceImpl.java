@@ -1,6 +1,6 @@
-package ru.daniilazarnov.spring.intro.service;
+package ru.daniilazarnov.spring.intro.service.question;
 
-import ru.daniilazarnov.spring.intro.dao.QuestionDao;
+import ru.daniilazarnov.spring.intro.dao.question.QuestionDao;
 import ru.daniilazarnov.spring.intro.domain.Question;
 
 import java.util.List;

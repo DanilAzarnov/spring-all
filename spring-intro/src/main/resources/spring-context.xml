@@ -4,11 +4,18 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="questionDao" class="ru.daniilazarnov.spring.intro.dao.QuestionDao">
+    <bean id="questionDao" class="ru.daniilazarnov.spring.intro.dao.question.QuestionDao">
     </bean>
 
-    <bean id="questionService" class="ru.daniilazarnov.spring.intro.service.QuestionServiceImpl">
+    <bean id="userDao" class="ru.daniilazarnov.spring.intro.dao.user.UserDao">
+    </bean>
+
+    <bean id="questionService" class="ru.daniilazarnov.spring.intro.service.question.QuestionServiceImpl">
         <constructor-arg name="dao" ref="questionDao"/>
+    </bean>
+
+    <bean id="userService" class="ru.daniilazarnov.spring.intro.service.user.UserServiceImpl">
+        <constructor-arg name="dao" ref="userDao"/>
     </bean>
 
 </beans>

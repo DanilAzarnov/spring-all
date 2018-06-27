@@ -1,4 +1,4 @@
-package ru.daniilazarnov.spring.intro.service;
+package ru.daniilazarnov.spring.intro.service.question;
 
 import ru.daniilazarnov.spring.intro.domain.Question;
 

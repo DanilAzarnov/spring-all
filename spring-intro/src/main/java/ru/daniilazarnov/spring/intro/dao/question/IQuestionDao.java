@@ -1,4 +1,4 @@
-package ru.daniilazarnov.spring.intro.dao;
+package ru.daniilazarnov.spring.intro.dao.question;
 
 import ru.daniilazarnov.spring.intro.domain.Question;
 
