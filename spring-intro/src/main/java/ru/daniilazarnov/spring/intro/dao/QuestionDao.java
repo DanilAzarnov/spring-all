@@ -1,10 +1,10 @@
-package ru.daniilazarnov.spring.intro.service.question;
+package ru.daniilazarnov.spring.intro.dao;
 
 import ru.daniilazarnov.spring.intro.domain.Question;
 
 import java.util.List;
 
-public interface IQuestionService {
+public interface QuestionDao {
 
     List<Question> getListQuestion();
 

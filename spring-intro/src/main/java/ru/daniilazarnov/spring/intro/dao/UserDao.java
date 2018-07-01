@@ -1,10 +1,10 @@
-package ru.daniilazarnov.spring.intro.dao.user;
+package ru.daniilazarnov.spring.intro.dao;
 
 import ru.daniilazarnov.spring.intro.domain.User;
 
 import java.util.Optional;
 
-public interface IUserDao {
+public interface UserDao {
 
     Optional<User> getUser();
 

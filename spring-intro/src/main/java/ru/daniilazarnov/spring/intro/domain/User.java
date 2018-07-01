@@ -9,13 +9,6 @@ public class User {
         return firstName + " " + lastName;
     }
 
-    public static User userEmpty() {
-        return new User("", "");
-    }
-
-    public User() {
-    }
-
     public User(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -25,16 +18,8 @@ public class User {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
     public String getLasttName() {
         return lastName;
-    }
-
-    public void setLasttName(String lastName) {
-        this.lastName = lastName;
     }
 
 }

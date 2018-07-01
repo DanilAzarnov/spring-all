@@ -1,13 +1,13 @@
-package ru.daniilazarnov.spring.intro.service.user;
+package ru.daniilazarnov.spring.intro.service;
 
 import ru.daniilazarnov.spring.intro.domain.User;
 
 import java.util.Optional;
 
-public interface IUserService {
+public interface UserService {
 
     Optional<User> getUser();
 
-    void saveUser(User user);
+    User createUser();
 
 }
