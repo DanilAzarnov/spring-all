@@ -3,7 +3,7 @@ package ru.daniilazarnov.spring.intro.dao;
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 import org.springframework.stereotype.Repository;
-import ru.daniilazarnov.spring.intro.Main;
+import ru.daniilazarnov.spring.intro.Application;
 import ru.daniilazarnov.spring.intro.domain.Question;
 import ru.daniilazarnov.spring.intro.service.I18nService;
 
@@ -23,7 +23,7 @@ public class CsvQuestionDao implements QuestionDao {
 
     public List<Question> getListQuestion() {
 
-        try (Reader reader = new InputStreamReader(Main.class.getClassLoader().getResourceAsStream(messagePath))) {
+        try (Reader reader = new InputStreamReader(Application.class.getClassLoader().getResourceAsStream(messagePath))) {
 
             CsvToBean<Question> csvToBean = new CsvToBeanBuilder<Question>(reader)
                     .withType(Question.class)

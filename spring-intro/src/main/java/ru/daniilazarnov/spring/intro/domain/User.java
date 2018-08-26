@@ -14,12 +14,4 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLasttName() {
-        return lastName;
-    }
-
 }

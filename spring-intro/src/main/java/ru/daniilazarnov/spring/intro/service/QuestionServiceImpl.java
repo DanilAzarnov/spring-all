@@ -1,7 +1,7 @@
 package ru.daniilazarnov.spring.intro.service;
 
 import org.springframework.stereotype.Service;
-import ru.daniilazarnov.spring.intro.dao.CsvQuestionDao;
+import ru.daniilazarnov.spring.intro.dao.QuestionDao;
 import ru.daniilazarnov.spring.intro.domain.Question;
 
 import java.util.List;
@@ -9,9 +9,9 @@ import java.util.List;
 @Service
 public class QuestionServiceImpl implements QuestionService {
 
-    private final CsvQuestionDao dao;
+    private final QuestionDao dao;
 
-    public QuestionServiceImpl(CsvQuestionDao dao) {
+    public QuestionServiceImpl(QuestionDao dao) {
         this.dao = dao;
     }
 

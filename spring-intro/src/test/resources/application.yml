@@ -1,0 +1,7 @@
+application:
+  base-message-path: i18n/message
+
+spring:
+  shell:
+    interactive:
+      enabled: false

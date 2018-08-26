@@ -8,7 +8,7 @@ import java.util.Optional;
 @Repository
 public class UserDaoImpl implements UserDao {
 
-    private Optional<User> user;
+    private Optional<User> user = Optional.empty();
 
     public Optional<User> getUser() {
         return user;

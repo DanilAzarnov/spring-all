@@ -37,7 +37,7 @@ public class SpringExamService implements ExamService {
         exam.getResult().put(question.getTextByQuestion(), checkCorrectAnswer(question.getCorrectAnswer(), userAnswer));
     }
 
-    private static boolean checkCorrectAnswer(String correctAnswer, String userAnswer) {
+    private boolean checkCorrectAnswer(String correctAnswer, String userAnswer) {
         return userAnswer.trim().equalsIgnoreCase(correctAnswer);
     }
 

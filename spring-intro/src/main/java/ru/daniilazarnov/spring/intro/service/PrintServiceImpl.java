@@ -22,7 +22,9 @@ public class PrintServiceImpl implements PrintService {
 
         exam.getResult().forEach((string, aBoolean) -> {
                     System.out.println(string + " -> " + aBoolean);
-                    if (aBoolean) countCorrectAnswer.getAndIncrement();
+                    if (aBoolean) {
+                        countCorrectAnswer.getAndIncrement();
+                    }
                 }
         );
 
